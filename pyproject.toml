@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+  | __pycache__
+  | .*_test_data
+  | .*\.ipynb_checkpoints
+)/
+'''
+
+[tool.isort]
+profile = "black"
+known_first_party = ["error_consistency"]

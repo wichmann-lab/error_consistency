@@ -1,0 +1,5 @@
+webdatasets
+torch
+torchvision
+ffcv
+Pillow

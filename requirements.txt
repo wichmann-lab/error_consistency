@@ -1,0 +1,11 @@
+black
+isort
+nbstripout
+pre-commit
+pytest
+numpy
+seaborn
+matplotlib
+pandas
+numba
+scikit-learn
